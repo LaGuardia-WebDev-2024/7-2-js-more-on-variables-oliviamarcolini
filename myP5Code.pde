@@ -7,14 +7,21 @@ void setup() {
 var x = 200;
 var y = 100;
 
+var randRed = random(0,255);
+var randGreen = random(0,255);
+var randBlue = random(0,255);
+
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
   background(255,255,255,200);
 
   //💡⬇️⬇️⬇️💡 Your Code For This Unit Goes Here
   
+  background (randRed, randGreen, randBlue);
+ 
   noStroke();
   fill(30, 204, 91); // a nice froggy green!
+  
   ellipse(x, y, 200, 100); // face 
 
   fill(30, 204, 91);
@@ -55,7 +62,9 @@ void mousePressed(){
   var myText = "x: " + mouseX + "\ny: " + mouseY;
   text(myText, mouseX + 15, mouseY);
   console.log(myText);
-  
+  randRed = random(0,255);
+  randGreen = random(0,255);
+  randBlue = random(0,255);
   eyeSize = eyeSize + 1;
 }
 
