@@ -24,8 +24,19 @@ void draw(){
   fill(255, 255, 255); // for the whites of the eyes!
   ellipse(x - 50, y - 50, 30, 30); // left eyeball
   ellipse(x + 50, y - 50, 30, 30); // right eyeball
+  
+  fill(214, 49, 49); // color mouth
+  ellipse(x, y + 10, 120, 70); // mouth
+  
+  fill (0, 0, 0); // color inside eyes
+  rect (x - 55, y - 55, 10, 20);
+  rect (x + 45, y - 55, 10, 20);
+  
+  x = mouseX;
+  y = mouseY;
 
 }
+
 
 
 
